@@ -1,4 +1,8 @@
 /* 
+resource: https://www.youtube.com/watch?v=9jULHSe41ls
+*/
+
+/* 
 Key Terms / Terminologies
 --------------
 1.Reducer: The Banker
@@ -49,5 +53,35 @@ Now lets create store
 */
 
 /* 
-Reducer and store completed Now we have to hook it up with the react app
+Reducer and store completed Now we have to hook it up with the react app with provider
+1. into the main index.js wrap the <App/> component into the provider
+2. import the provider from React-Redux
+3. we also imported our redux store in our index.js
+4. pass it as prop as <Provider store={store}/>
+
+Now how to access the data in the store?
+=============================================
+1. In the app.js import useSelector from react-redux
+2. Then we used a callback function as const account = useSelector((state)=>state.account);
+
+Now time to create the action creator
+=========================================
+1. In this particulat example we need to create 2 different functions 
+2. create a folder named actionCreators in the state folder
+3. create index.js file in it and create all action functions in it
+4. we created necessary functions
+5. after that we created a central index.js into the state folder to combine all actions 
+
+
+Now time to access all actions into the app.js
+===================================================
+1. call another hook "useDispatch" and bindActionCreators
+.
+.
+.
+Redux thunk middleware
+============================
+
+
+
 */
